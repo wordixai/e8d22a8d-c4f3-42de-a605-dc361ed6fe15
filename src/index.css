@@ -2,17 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-The @apply directive should not be used with the group utility class.
-*/
-
 @layer base {
   :root {
-   
+    --background: 45 20% 95%;
+    --foreground: 30 15% 15%;
+    --card: 45 20% 98%;
+    --card-foreground: 30 15% 15%;
+    --popover: 45 20% 98%;
+    --popover-foreground: 30 15% 15%;
+    --primary: 25 80% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 30% 85%;
+    --secondary-foreground: 30 15% 15%;
+    --muted: 45 20% 90%;
+    --muted-foreground: 30 15% 45%;
+    --accent: 35 70% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 30 20% 80%;
+    --input: 30 20% 80%;
+    --ring: 25 80% 55%;
+    --radius: 0.5rem;
   }
 
-  .dark {
+  * {
+    font-family: 'Caveat', cursive, system-ui, -apple-system, sans-serif;
+  }
 
+  body {
+    overflow: hidden;
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
